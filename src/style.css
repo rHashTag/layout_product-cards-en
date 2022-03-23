@@ -12,12 +12,14 @@ body {
   background: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
+  padding: 33px 17px 17px;
 }
 
 .card__image {
   /* position: absolute; */
   width: 160px;
   height: 134px;
+  /* margin: 32px 19px 0; */
   /* left: calc(50% - 160px / 2);
   top: 33px; */
 }
@@ -44,12 +46,15 @@ body {
 }
 
 .card__price {
-  font-size: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   padding: 0;
+}
+
+.card__price-tag {
+  font-size: 12px;
 }
 
 .card__amount {
@@ -64,14 +69,17 @@ body {
 }
 
 .card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
-
-  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
-  position: absolute;
+  color: #fff;
+  /* position: absolute; */
   width: 166px;
   height: 40px;
   /* left: calc(50% - 166px/2);
