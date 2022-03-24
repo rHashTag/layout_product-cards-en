@@ -1,26 +1,17 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: Roboto, sans-serif;
-  font-size: 10px;
-}
-
-body {
-  margin: 0;
-}
-
 .card {
   width: 200px;
+
+  padding: 32px 16px 16px;
+
   background: #fff;
+
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  padding: 32px 16px 16px;
 }
 
 .card__image {
   display: block;
+
   margin: 0 3px 40px;
   width: 160px;
   height: 134px;
@@ -30,14 +21,19 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
+
   color: #060b35;
+
   margin: 0 0 4px;
 }
 
 .card__product-code {
   display: flex;
+
   line-height: 14px;
+
   color: #616070;
+
   margin: 0 0 16px;
 }
 
@@ -45,6 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
   margin-bottom: 24px;
 }
 
@@ -52,6 +49,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 16px;
 
 }
@@ -68,44 +66,31 @@ body {
 }
 
 .card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #fff;
 
   width: 166px;
   height: 40px;
-  
-  background: #00acdc;
+
+  background: var(--blue-accent);
+  border: 1px solid transparent;
   border-radius: 5px;
 }
 
 .card__button:hover {
   background: #fff;
-  border: 1px solid #00acdc;
+
+  border: 1px solid var(--blue-accent);
   border-radius: 5px;
-  color: #00acdc;
-}
 
-.stars {
-  display: flex;
-}
-
-.stars__star {
-  background-image: url(./images/star.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 4px;
-  width: 16px;
-  height: 16px;
-}
-
-.stars--4 .stars__star:nth-child(-n+4) {
-  background-image: url(./images/star-active.svg);
+  color: var(--blue-accent);
 }
